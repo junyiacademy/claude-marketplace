@@ -1,0 +1,31 @@
+{
+  "name": "english-coach",
+  "version": "1.0.0",
+  "description": "Turn Claude Code into your English coach — get natural, idiomatic English coaching in every conversation while you code",
+  "author": {
+    "name": "Junyi Academy",
+    "email": "support@junyiacademy.org"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/session-start.sh"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'Reminder: Check the user input for any corrections or alternative phrasings, as instructed in your English Coach mode. Do this briefly before proceeding with the task.'"
+          }
+        ]
+      }
+    ]
+  }
+}

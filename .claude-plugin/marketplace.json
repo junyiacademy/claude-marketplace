@@ -1,0 +1,23 @@
+{
+  "name": "junyiacademy-claude-plugins",
+  "owner": {
+    "name": "Junyi Academy",
+    "email": "support@junyiacademy.org"
+  },
+  "metadata": {
+    "description": "Claude Code plugins by Junyi Academy — tools for learning, productivity, and development workflows"
+  },
+  "plugins": [
+    {
+      "name": "english-coach",
+      "source": "./plugins/english-coach",
+      "description": "Turn Claude Code into your English coach — get natural, idiomatic English coaching in every conversation while you code",
+      "version": "1.0.0",
+      "author": {
+        "name": "Junyi Academy"
+      },
+      "category": "learning",
+      "tags": ["english", "language-learning", "coaching", "esl"]
+    }
+  ]
+}
